@@ -11,5 +11,9 @@ module Jun{
         public init_game() : void{
             console.log('初始成功');
         }
+
+        public init_server_data(cd: any): void {
+            this.sendNotification(NOTICE.CHECK_INIT);
+        }
     }
 }

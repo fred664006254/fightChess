@@ -28,8 +28,15 @@
 //////////////////////////////////////////////////////////////////////////////////////
 
 class Main extends egret.DisplayObjectContainer {
-
-
+    public static SER_ID: number;//区SID
+    public static USER_ID: string;//账户UID
+    public static MEMBER_ID: string;//初始账户MID
+    public static MEMBEK_ID: string;//midkey
+    public static OPEN_ID: string;//平台ID
+    public static PLATFORM: string;//平台分支，根据登录方式而有差别
+    public static TD_SHARE: string;//TD分享统计
+    public static OPENMODE: string;//打开模式 红包模式 游戏模式
+    public static HB_ID: string;//对应的红包id
 
     public constructor() {
         super();
@@ -75,7 +82,7 @@ class Main extends egret.DisplayObjectContainer {
         //初始化MVC结构
         this.facade.startUp(appContainer);
         this.facade.sendNotification(Jun.NOTICE.CLIENT_INITED);
-
+        this.facade.sendNotification(Jun.NOTICE.CHECK_INIT);
     }
 
     private async loadResource() {
