@@ -1,0 +1,31 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/game/game.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/experimental/experimental.js",
+		"libs/modules/socket/socket.js",
+		"libs/modules/dragonBones/dragonBones.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/promise/promise.js",
+		"libs/modules/puremvc/puremvc.js"
+	],
+	"game": [
+		"bin-debug/Mvc/StartCommand.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/Platform.js",
+		"bin-debug/Message/LocMessage.js",
+		"bin-debug/Message/NetMessage.js",
+		"bin-debug/Mvc/ControllerPrepCommand.js",
+		"bin-debug/Mvc/ModelPrepCommand.js",
+		"bin-debug/Main.js",
+		"bin-debug/Mvc/ViewPrepCommand.js",
+		"bin-debug/Mvc/App/AppContainer.js",
+		"bin-debug/Mvc/App/ApplicationFacade.js",
+		"bin-debug/Mvc/App/ApplicationMediator.js",
+		"bin-debug/Mvc/Command/GameCommand.js",
+		"bin-debug/Mvc/Proxy/GameProxy.js"
+	]
+}
